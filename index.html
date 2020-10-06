@@ -1,48 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="registration.js"></script>
+
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td>Username</td>
-            <td>
-                <input type="text" placeholder="Enter Username">
-            </td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td>
-                <input type="text" placeholder="Enter Password">
-            </td>
-        </tr>
-        <tr>
-            <td>Mobile Number</td>
-            <td>
-                <input type="text" placeholder="Enter Mobile Number">
-            </td>
-        </tr>
-        <tr>
-            <td>Email</td>
-            <td>
-                <input type="text" placeholder="Enter Email">
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
-        </tr>
-    </table>
 
+  <form>
+
+    Username:
+    <input type="text" id="username">
+    <br> EmailId:
+
+    <input type="text" id="emailid">
+    <br> Mobile Number:
+    <input type="text" id="mobileNumber" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <br> Password:
+    <input type="password" id="password">
+    <br>
+
+    <button onclick="register()">Register</button>
+
+  </form>
+
+  <script>
+    function register() {
+
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var emailid = document.getElementById('emailid').value;
+      var mobileNumber = document.getElementById('mobileNumber').value;
+      var password = document.getElementById('password').value;
+
+
+      if (/^\d{10}$/.test(mobileNumber)) {} else {
+        alert("Invalid number; must be ten digits");
+       
+      }
+
+      if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(emailid)) {} else {
+        alert("Invalid email;");
+       
+      }
+
+      if ((username == null || username == "")&&
+        (password == null || password == "")) {
+        alert("please fill all fields")
+        return false;
+      }
+      var userdetails = {
+        username: username,
+        emailid: emailid,
+        mobileNumber: mobileNumber,
+        password: password
+
+      }
+
+
+      //localStorage.setItem('',)
+
+      var users = JSON.parse(localStorage.getItem('users'));
+
+      console.log(typeof users);
+
+      users.push(userdetails);
+
+      console.log(users);
+
+      localStorage.setItem('users', JSON.stringify(users));
+    }
+  </script>
 
 </body>
 
 </html>
+
+
+<!-- /*
+
+Task-1:  Apply validations for all fields. i.e, make sure, no field is empty
+
+Task -2 :  mobile number -> 10 numbers and should be numbers, email id should have '@' and '.'
+
+Task -3 : If the username / emailid / mobile number is already available in the local storage (users), then 
+prompt the user with some error message and also make sure, duplicate username/ emailId/ mobile number 
+are not stored in local storage. 
+
+
+*/ -->
