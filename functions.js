@@ -40,3 +40,4 @@ function showPrimes(n){
     }
 }
 showPrimes(20);
+

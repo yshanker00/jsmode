@@ -9,8 +9,8 @@ var items = [
 ]
 
 // array map
-var itemNames = items.map(function (item){
-   return item.name;
+var itemNames = items.map(function (item) {
+    return item.name;
 });
 console.log(itemNames);
 
@@ -21,7 +21,7 @@ var itemNames = items.filter(item => {
 }).map(item => {
     return item.price;
 })
-// console.log(itemNames);
+console.log(itemNames);
 
 // shorthand
 

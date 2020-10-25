@@ -12,4 +12,3 @@ filterItems = items.filter(item => {
     return item.price <=300;
 })
 console.log(filterItems)
-console.log(items)

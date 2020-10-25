@@ -1,0 +1,10 @@
+
+
+Interacting with DOM
+
+* Change/remove HTML elements in the DOM / on the page
+* Change and add CSS styles to elements
+* Read and change elemnts attributes (href,src, alt,custom)
+* Create new HTML elements and insert them in to DOM /the page
+* Attach event listeners to elemts (click, keyPress ,Submit)
+

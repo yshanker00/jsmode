@@ -14,6 +14,3 @@ var foundItem = items.find(item => {
 
 console.log(foundItem);
 
-var itemName_1 = items.find(item => item.price == 10)
-
-console.log(itemName_1);
