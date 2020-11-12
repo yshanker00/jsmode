@@ -1,0 +1,3 @@
+ regular expression is a type of object
+ It cab either constructed with the RegEXP constructor or written as a 
+ literal value by enclosing a pattern in forward slash
