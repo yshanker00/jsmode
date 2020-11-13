@@ -1,0 +1,51 @@
+Code:
+
+It is set of sspecia; instructions to tell the computer what tasks to perform.
+
+Statements:
+
+in a computer language, a group of words, numbers and operators that performs 
+a specific task is a statement.
+
+Expressions:
+
+Statements are made up of one or more expressions. An expression is 
+any reference to a variable or value, or a set of Variables(s) and values(s) combined 
+with operators
+
+
+Developer tool console:
+https://blog.teamtreehouse.com/mastering-developer-tools-console
+
+
+operators:
+
+.Assignment = 
+.Math
+.Compound Assignments += ,-+ ,*= and /=
+.Increment/Decrement ++, -- 
+.Object property Access: . as in console.log()
+.Equality == , ===(strict -mode)
+.Comparison <
+.Logical
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+
+Converting Between types
+If you have a number but need to print it on the screen, you need to convert the value to a string
+and in jS this conversion is called "coercion".
+
+“var a = "42";
+var b = Number( a );
+
+console.log( a );    // "42"
+console.log( b );    // 42”
+
+“Using Number(..) (a built-in function) as shown is an explicit coercion from any 
+other type to the number type. That should be pretty straightforward.”
+
+
+Comments:
+. Code without comments is suboptimal.
+. Too many Comments is probably a sign of poorly written code.
+
