@@ -1,0 +1,10 @@
+javascript typed values:
+
+.string
+.number
+.boolean
+.null and undefined
+.object
+.symbol
+
+typeof operator that can examine a value and tell you what type it is.
