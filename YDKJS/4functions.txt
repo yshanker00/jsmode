@@ -1,0 +1,9 @@
+Functions are subtype of objects
+
+Built-in Type methods:
+It is exposed as properties and methods that are quite powerfull and usefull
+ex: a.length;
+    a.toUpperCase();
+              There is a String object wrapper form,typically called a "native," 
+              that pairs with the primitive string type,Its this object wrapper that defines
+              the toUpperCAse() method on its prototype.
