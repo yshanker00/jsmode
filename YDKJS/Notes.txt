@@ -49,3 +49,4 @@ Comments:
 . Code without comments is suboptimal.
 . Too many Comments is probably a sign of poorly written code.
 
+scope
