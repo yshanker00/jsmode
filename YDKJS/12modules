@@ -1,0 +1,20 @@
+Modules let you define private implementation details that are 
+hidden from the outside world,as well as a public API that is accessible
+from the outside.
+function User(){
+    var username,password;
+    functiondoLogin(user,pw){
+        username = user;
+        password = pw;
+    }
+    //rest of login
+}
+
+var publicAPI = {;
+    login:doLogin
+}
+return publicAPI;
+
+//create a "User module instance"
+var fred = User();
+fred.login("fred","1234");

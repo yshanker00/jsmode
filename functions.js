@@ -41,3 +41,10 @@ function showPrimes(n){
 }
 showPrimes(20);
 
+var b = (function foo (){
+    return 46;
+})();
+
+b =(() => 40);
+console.log(b(););
+
