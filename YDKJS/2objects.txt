@@ -1,0 +1,7 @@
+The object type refres to a compound value where you can set
+properties(named locations) that each hold their own values of any type.
+
+Properties can either be accessed with dot notaion or bracket notaion
+Bracket notaion is useful if you have a property name that has special characters in it.
+
+
