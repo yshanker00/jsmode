@@ -1,1 +1,19 @@
-Coe
+Coercion 
+comes in to two parts explicit and implicit
+explicit coercion:
+
+var a = "42";
+
+var b = Number( a );
+
+a;                // "42"
+b;                // 42 -- the number!
+implicit coercion:
+
+var a = "42";
+
+var b = a * 1;    // "42" implicitly coerced to 42 here
+
+a;                // "42"
+b;                // 42 -- the number!”
+
