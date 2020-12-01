@@ -1,0 +1,8 @@
+Tool that converts your newer code into older code equivalents.
+This process is commonly called "transpiling".
+
+a term for transforming + compiling.
+
+Babel es6+ to es5
+
+traceur 

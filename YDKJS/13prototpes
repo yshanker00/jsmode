@@ -1,0 +1,25 @@
+when you reference a property on an object,if that property
+does not exist,javascript will automatically use that objects
+internal prototype refrence to find another object to look for the 
+property on.
+you could think of this almost as a fallback if the property is missing.
+
+example:
+var foo = {
+    a:42;
+}
+var bar = Object.create( foo );
+bar.b = "created"
+
+bar.b;  //"created"
+bar.a;  // 42
+
+The a property doesnot actually exist on the bar object,but 
+beacuse bar is protootype-linked to foo,Javascript automatically 
+falls back to looking for a on the foo object,where it's found.
+
+    More natural way of applying protypes is a pattern called "behavior delegation"
+ where you intentionally design your linked objects to be able to
+ delegate from one to other for parts of the needed behavior.
+ 
+    

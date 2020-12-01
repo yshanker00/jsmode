@@ -1,0 +1,10 @@
+Taking the defination of newer feature and producing a piece
+of code thats equivalent to the behavior,but is able to run in
+older JS environments.
+
+“if (!Number.isNaN) {
+    Number.isNaN = function isNaN(x) {
+        return x !== x;
+    };
+}”
+

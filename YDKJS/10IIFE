@@ -1,0 +1,16 @@
+IIFE is just a function and functions create create variable scope,
+ using an IIFE in this fashion is often used to declare variables that 
+ wont affect the suurounding code outside the IIFE
+
+
+var x= (function IIFE(){
+    var a = 10;
+    console.log(a);
+})();
+console.log(a);
+
+var x = (function IIFE(){
+    return 42
+})();
+
+x; 42

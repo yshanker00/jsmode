@@ -1,0 +1,13 @@
+anonymous function
+
+var foo = function () {
+    // .. 
+
+}
+variable named function
+
+var x = function bar(){
+
+    // ..
+
+}
