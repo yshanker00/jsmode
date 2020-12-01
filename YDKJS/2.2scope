@@ -1,0 +1,10 @@
+Engine:
+responsible for start to finish compliation and execution of our JS program
+
+Compiler:
+one of Engines friends;handle all the work of parsing and code generation
+
+scope:
+collects and maintains a lookup list of all the declared identifiers,and enforces a strict
+set of rules as to how these are accessible to currently executing code.
+

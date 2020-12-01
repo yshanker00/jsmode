@@ -1,0 +1,30 @@
+1.tokenizing/Lexing:
+
+breaking up string of characters into meaningful chunks, called tokens.
+var a = 2;. This program would likely be broken up into the following tokens: 
+var, a, =, 2, and ;.
+
+2.Parsing:
+
+taking a stream of tokens and turning it into  a tree of nested elemnts,
+which collectively represent the grammatical structure of the program.
+
+    The tree for var a = 2; might start with a top-level node called VariableDeclaration, 
+with a child node called Identifier (whose value is a), and another child called 
+AssignmentExpression which itself has a child called NumericLiteral (whose value is 2).
+
+3.Code-Generation: 
+
+the process of taking an AST and turning it into executable code. 
+This part varies greatly depending on the language, the platform it's targeting, etc.
+
+For JavaScript, the compilation that occurs happens, in many cases,mere microseconds 
+(or less!) before the code is executed. To ensure the fastest performance, 
+JS engines use all kinds of tricks (like JITs, which lazy compile and even 
+hot re-compile, etc.) which are well beyond the "scope" of our discussion here.”
+
+
+
+
+
+
